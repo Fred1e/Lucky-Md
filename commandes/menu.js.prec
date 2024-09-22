@@ -1,14 +1,14 @@
 const util = require('util');
 const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format, styletext } = require(__dirname + "/../framework/mesfonctions");
-//const {police}=require(__dirname+"/../framework/mesfonctions")
+const { fredi } = require(__dirname + "/../ezr/fredi");
+const { format, styletext } = require(__dirname + "/../ezr/mesfonctions");
+//const {police}=require(__dirname+"/../ezr/mesfonctions")
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
-zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
+fredi({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre } = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
+    let { cm } = require(__dirname + "/../ezr//fredi");
     var coms = {};
     var mode = "public";
     if ((s.MODE).toLocaleLowerCase() != "oui") {
@@ -22,12 +22,12 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     const date = moment.tz("asia/karachi").format("DD/MM/YYYY");
     console.log("date" + date);
     console.log("temps " + temps);
-    let menuMsg = "  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n";
+    let menuMsg = "  ╩═══ * lucky * ╩═══\n\n";
     /*menuMsg+=`
     
     
     
-    Owner : ${s.OWNER_NAME} \n       || Commandes : ${cm.length} \n        || Date : ${date}\n || Heure : ${temps} \n || Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}\n || Plateforme : ${os.platform()}\n || Developpeur : Djalega++ \n\n ╰────────────────`;
+    Owner : ${s.OWNER_NAME} \n       || Commandes : ${cm.length} \n        || Date : ${date}\n || Heure : ${temps} \n || Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}\n || Plateforme : ${os.platform()}\n || Developpeur : Fredie \n\n ╰────────────────`;
     
     
     
@@ -44,7 +44,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
    ||      Date : ${date}
    ||      Heure : ${temps}
    ||      Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-   ||  Développeurs : Djalega++||Luffy
+   ||  Développeurs : Fredie
    ||
    ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
     menuMsg += `
@@ -57,7 +57,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 ║    Heure : ${temps}
 ║    Mémoire : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║    Plateforme : ${os.platform()}
-║    Développeurs : Djalega++||Luffy
+║    Développeurs : Fredie
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
@@ -71,7 +71,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     //  var link = "https://wallpapercave.com/uwp/uwp3860299.jpeg";
     var link = s.IMAGE_MENU;
     try {
-        zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "by Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "by Fredie" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -112,12 +112,12 @@ module.exports.commande =()=>
 
 var tt=[]
 
- async  function execute(dest,zok,commandeOptions?)
+ async  function execute(dest,luc,commandeOptions?)
   {
 
     var link = "https://wallpapercave.com/uwp/uwp3860299.jpeg"
     // var listCom =listeCommande()
-    let msg= "  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n"
+    let msg= "  ╩═══ * Lucky * ╩═══\n\n"
 
 
 //const listeCommande= async ()=> {
@@ -206,7 +206,7 @@ var tt=[]
         msg+=+'\n'+comm
       }}
 
-    await zok.sendMessage(dest,{image :{url:link},caption:msg+txt});
+    await luc.sendMessage(dest,{image :{url:link},caption:msg+txt});
 
     */
 //   
