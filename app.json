@@ -1,14 +1,14 @@
 {
-  "name": "Zokou-2.0",
-  "description": "bot whatsapp développé par djalega++",
+  "name": "LUCKY 10.0.0",
+  "description": "A WhatsApp Bot Developed By Fredie",
   "keywords": [
     "bot",
     "node",
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://raw.githubusercontent.com/djalega8000/Zokou-2.0/main/Zokou.jpg",
-  "repository": "https://github.com/djalega8000/Zokou-2.0",
+  "logo": "https://i.imgur.com/ecRS5BQ.jpeg",
+  "repository": "https://github.com/Fred1e/LUCKY_MD",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -39,7 +39,7 @@
     },
     "BOT_MENU_LINKS": {
       "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value": "https://i.pinimg.com/736x/0a/70/6f/0a706f90d6a1fb39919aedfbb7fdd8d3.jpg",
+      "value": "https://i.imgur.com/ecRS5BQ.jpeg",
       "required": false
     },
     "PUBLIC_MODE": {
@@ -49,7 +49,7 @@
     },
     "HEROKU_APY_KEY": {
       "description": "insert your heroku api-key (this is optionnal)",
-      "required": false
+      "required": "HRKU-841b19e7-8679-437b-bb6c-edd4133978dd"
     },
     "HEROKU_APP_NAME": {
       "description": "insert your heroku APP NAME (this is optionnal)",
@@ -63,17 +63,17 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "Djalega++"
+      "value": "Fredie"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
       "required": false,
-      "value": "22891733300"
+      "value": "255752593977,255764182801,255620814108"
     },
     "WARN_COUNT": {
       "desc": "this is the limit of warn for warning commandes",
       "required": false,
-      "value": "3"
+      "value": "5"
     },
     "STARTING_BOT_MESSAGE": {
       "description": "if you don't want startting-bot-message put no else put yes",
@@ -82,7 +82,7 @@
     },
     "PRESENCE": {
       "description": "Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-      "value": "",
+      "value": "1",
       "required": false
     },
     "PM_CHATBOT": {
