@@ -34,7 +34,7 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "Zokou-MD",
+      "value": "LUCKY_MD",
       "required": false
     },
     "BOT_MENU_LINKS": {
@@ -49,7 +49,7 @@
     },
     "HEROKU_APY_KEY": {
       "description": "insert your heroku api-key (this is optionnal)",
-      "required": "HRKU-841b19e7-8679-437b-bb6c-edd4133978dd"
+      "value": "HRKU-841b19e7-8679-437b-bb6c-edd4133978dd"
     },
     "HEROKU_APP_NAME": {
       "description": "insert your heroku APP NAME (this is optionnal)",
